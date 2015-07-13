@@ -20,8 +20,20 @@
     {"heading": "Article 18", "text": "Everyone has the right to the freedom of thought, conscience, and religion."},
     {"heading": "Article 19", "text": "Everyone has the right to freedom of opinion and expression."},
     {"heading": "Article 20", "text": "Everyone has the right to peaceful assembly"},
+    {"heading": "Article 21","text": "Everyone has the right to participate in government equally."},
+    {"heading": "Article 22","text": "Everyone has a right to social security."},
+    {"heading": "Article 23","text": "Everyone has the right to work in just conditions; with equal pay for equal work; and the right to form and join trade unions."},
+    {"heading": "Article 24","text": "Everyone has the right to rest and leisure."},
+    {"heading": "Article 25","text": "Everyone has the right to a standard of living adequate for health and well-being."},
+    {"heading": "Article 26","text": "Everyone has a right to education."},
+    {"heading": "Article 27","text": "Everyone has the right to participate in the cultural life of the community."},
+    {"heading": "Article 28","text": "Everyone is entitled to the freedoms within this Declaration."},
+    {"heading": "Article 29","text": "The only limits to rights and freedoms are subject to laws that respect the rights and freedoms declared in this document."},
+    {"heading": "Article 30","text": "Nothing in this Declaration should be aimed at the destruction of any of the rights or freedoms."}
+  ],
 
-  ]
+  "full": [],
+  "our":[]
 
 
 }

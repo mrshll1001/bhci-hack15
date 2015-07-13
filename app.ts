@@ -26,7 +26,7 @@ class MyAppComponent {
         this.name = 'Alice';
         this.names = ["Aarav", "MartÃ­n", "Shannon", "Ariana", "Kai"];
         this.version = 'simple';
-        $.getJSON('test.json', function(data)
+        $.getJSON('rights.json', function(data)
         {
           self.rights = data;
         });

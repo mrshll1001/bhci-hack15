@@ -184,6 +184,7 @@ Article 24
 1. Everyone has the right to rest and leisure
 2.
 3. Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay.
+
 Article 25
 1. Everyone has the right to a standard of living adequate for health and well-being.
 2.
@@ -237,5 +238,5 @@ Article 29
 
 Article 30
 1. Nothing in this Declaration should be aimed at the destruction of any of the rights or freedoms.
-2.   
+2.
 3. Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein.
