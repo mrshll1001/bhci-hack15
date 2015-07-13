@@ -29,6 +29,7 @@ class MyAppComponent {
         $.getJSON('rights.json', function(data)
         {
           self.rights = data;
+          setTimeout(function(){$('.tooltipped').tooltip({delay: 50});$('.collapsible').collapsible({accordion:false});},1000);
         });
         this.inc();
     }
