@@ -1,21 +1,27 @@
 /// <reference path="typings/angular2/angular2.d.ts" />
 
-import {Component, View, bootstrap} from 'angular2/angular2';
+import {Component, View, bootstrap, NgFor, NgIf} from 'angular2/angular2';
 
 // Annotation section
 @Component({
-  selector: 'my-app'
+    selector: 'my-app'
 })
+
 @View({
-  template: '<h1>Hello {{ name }}</h1>'
+    templateUrl: 'my-app.html',
+    directives: [NgFor, NgIf]
 })
+
 // Component controller
 class MyAppComponent {
-  name: string;
+    name: string;
+    names: Array<string>;
+    todos: Array<string>;
   
-  constructor() {
-    this.name = 'Alice';
-  }
+    constructor() {
+        this.name = 'Alice';
+        this.names = ["Aarav", "MartÃ­n", "Shannon", "Ariana", "Kai"];
+    }
 }
 
 
