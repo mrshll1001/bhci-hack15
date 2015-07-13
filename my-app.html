@@ -1,0 +1,27 @@
+<h1>Hello {{ name }}</h1>
+<p>Friends:</p>
+<ul>
+     <li *ng-for="#name of names">
+         {{ name }}
+     </li>
+</ul>
+
+<input #myname (keyup)>
+<p>{{myname.value}}</p>
+
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Green</label>
+    </p>
+
+    <p>
+      <input #test2 (change) type="checkbox" id="test5" />
+      <label for="test5">Accept these terms?</label>
+    </p>
+
+    <p *ng-if="test2.checked">You are included.</p>
+
