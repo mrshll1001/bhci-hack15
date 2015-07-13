@@ -18,12 +18,18 @@ class MyAppComponent {
     names: Array<string>;
     version: string;
     included: Array<boolean>;
+    rights;
 
     constructor()
     {
+        var self = this;
         this.name = 'Alice';
         this.names = ["Aarav", "MartÃ­n", "Shannon", "Ariana", "Kai"];
         this.version = 'simple';
+        $.getJSON('test.json', function(data)
+        {
+          self.rights = data;
+        });
         this.inc();
     }
 
