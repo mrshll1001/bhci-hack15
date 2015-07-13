@@ -22,15 +22,42 @@
     <div class="card">
       <div class="card-content black-text">
         <span class="card-title black-text">The Universal Declaration of Human Rights</span>
-        <div class="section">
-            <h5>The Right to Marry</h5>
-            <p>Everyone has the right the marry, form a family, and exit from a marriage (or whatever Angelika decides)</p>
+
+        <!-- List of simple rights -->
+        <div *ng-if="version == 'simple'">
+          <div *ng-for="#item of rights.simple">
+            <div class="divider"></div>
+            <div class="section">
+              <h5>{{item.heading}}</h5>
+              <p>{{item.text}}</p>
+            </div>
+          </div>
         </div>
-        <div class="divider"></div>
-        <div class="section">
-            <h5>The Right to Freedom.</h5>
-            <p>Everyone has the right freedom. Or something.</p>
+
+
+        <!-- List of full rights -->
+        <div *ng-if="version == 'full'">
+          <div *ng-for="#item of rights.full">
+            <div class="divider"></div>
+            <div class="section">
+              <h5>{{item.heading}}</h5>
+              <p>{{item.text}}</p>
+            </div>
+          </div>
         </div>
+
+        <!-- List of our version of the rights -->
+        <div *ng-if="version == 'our'">
+          <div *ng-for="#item of rights.our">
+            <div class="divider"></div>
+            <div class="section">
+              <h5>{{item.heading}}</h5>
+              <p>{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+
+
         <!-- <li *ng-for="#item of rights.simple">
           {{item.heading}}
         </li> -->
