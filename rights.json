@@ -1,0 +1,27 @@
+{
+  "simple": [
+    {"heading": "Article 01", "text": "All people are born free and equal."},
+    {"heading": "Article 02", "text": "Everyone is entitled to all the rights and freedoms in the Declaration of Human Rights."},
+    {"heading": "Article 03", "text": "Everyone has the right to a free and safe life."},
+    {"heading": "Article 04", "text": "No one should be enslaved; slavery should be prohibited."},
+    {"heading": "Article 05", "text": "No one should be subjected to torture."},
+    {"heading": "Article 06", "text": "Everyone has the right to be recognized as a person before the law."},
+    {"heading": "Article 07", "text": "Everyone is equal before the law and are entitled to equal protection."},
+    {"heading": "Article 08", "text": "Everyone has the right to compensation for acts violating their fundamental human rights."},
+    {"heading": "Article 09", "text": "No one should be arbitrarily arrested, detained, or exiled."},
+    {"heading": "Article 10", "text": "Everyone is entitled a fair and public hearing by an independent and impartial tribunal."},
+    {"heading": "Article 11", "text": "Everyone is innocent until proven guilty."},
+    {"heading": "Article 12", "text": "Everyone is entitled to their privacy."},
+    {"heading": "Article 13", "text": "Everyone has the right to freedom of residence and movement."},
+    {"heading": "Article 14", "text": "Everyone is entitled to seek and enjoy asylum from persecution."},
+    {"heading": "Article 15", "text": "Everyone has the right to a nationality."},
+    {"heading": "Article 16", "text": "Everyone has the right to marriage if both parties are fully consenting; they shall be protected by society and the State."},
+    {"heading": "Article 17", "text": "Everyone has the right to own property."},
+    {"heading": "Article 18", "text": "Everyone has the right to the freedom of thought, conscience, and religion."},
+    {"heading": "Article 19", "text": "Everyone has the right to freedom of opinion and expression."},
+    {"heading": "Article 20", "text": "Everyone has the right to peaceful assembly"},
+
+  ]
+
+
+}
