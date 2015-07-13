@@ -1,0 +1,22 @@
+{
+  "includes": [
+    {"url":"1-equality.png","title":"Equality"},
+    {"url":"2-rights&freedom.png","title":"Rights & freedom"},
+    {"url":"3-equal before law.png","title":"Equal before law"},
+    {"url":"4-remedy.png","title":"Remedy"},
+    {"url":"10-fair hearing2.png","title":"Fair hearing2"},
+    {"url":"11-innocent.png","title":"Innocent"},
+    {"url":"13-freedom of residence.png","title":"Freedom of residence"},
+    {"url":"15-nationality.png","title":"Nationality"},
+    {"url":"16-marriage.png","title":"Marriage"},
+    {"url":"17-own property.png","title":"Own property"},
+    {"url":"18-freedom of thought.png","title":"Freedom of thought"},
+    {"url":"21-government.png","title":"Government"},
+    {"url":"22-social security.png","title":"Social security"},
+    {"url":"23-employment.png","title":"Employment"},
+    {"url":"25-standard of living.png","title":"Standard of living"},
+    {"url":"26-education.png","title":"Education"},
+    {"url":"27-cultural life.png","title":"Cultural life"},
+    {"url":"29-limitations.png","title":"Limitations"}
+  ]
+}

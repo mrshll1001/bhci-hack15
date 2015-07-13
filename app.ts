@@ -19,6 +19,7 @@ class MyAppComponent {
     version: string;
     included: Array<boolean>;
     rights;
+    includes;
 
     constructor()
     {
@@ -29,6 +30,11 @@ class MyAppComponent {
         $.getJSON('rights.json', function(data)
         {
           self.rights = data;
+          setTimeout(function(){$('.tooltipped').tooltip({delay: 50});$('.collapsible').collapsible({accordion:false});},1000);
+        });
+        $.getJSON('includes.json', function(data)
+        {
+          self.includes = data.includes;
           setTimeout(function(){$('.tooltipped').tooltip({delay: 50});$('.collapsible').collapsible({accordion:false});},1000);
         });
         this.inc();

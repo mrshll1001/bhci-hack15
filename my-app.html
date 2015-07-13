@@ -75,21 +75,17 @@
     #inclusions img.include {
         opacity: 1;
     }
-    #inclusions p {
-        opacity: 0.3;
-        transition: opacity .5s;
-        -webkit-transition: opacity .5s;
-    }
-    #inclusions p.include {
+    #inclusions img.itu {
+        width: 70px;
         opacity: 1;
     }
   </style>
   <div class="col m8" id="inclusions">
     <h2>Here's where the cool shit happens</h2>
       <div class="row">
-        <div *ng-for="#item of rights.simple" class="col m6">
+        <div *ng-for="#item of includes" class="col m6">
           <div class="card-panel">
-              <div class=""><h4>{{item.heading}}</h4></div>
+              <div class=""><h4>{{item.title}} <img class="itu right" src="graphics/{{item.url}}" /></h4></div>
               <div class="">
             <img src="graphics/cisfemale.png" [class.include]="included[0]" class="tooltipped" data-position="top" data-tooltip="CIS Female" />
             <img src="graphics/cismale.png" [class.include]="included[1]" class="tooltipped" data-position="top" data-tooltip="CIS Male" />
