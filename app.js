@@ -15,13 +15,15 @@ var angular2_1 = require('angular2/angular2');
 var MyAppComponent = (function () {
     function MyAppComponent() {
         this.name = 'Alice';
+        this.names = ["Aarav", "MartÃ­n", "Shannon", "Ariana", "Kai"];
     }
     MyAppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app'
         }),
         angular2_1.View({
-            template: '<h1>Hello {{ name }}</h1>'
+            templateUrl: 'my-app.html',
+            directives: [angular2_1.NgFor, angular2_1.NgIf]
         }), 
         __metadata('design:paramtypes', [])
     ], MyAppComponent);
