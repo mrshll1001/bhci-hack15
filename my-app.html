@@ -68,7 +68,7 @@
   <style>
     #inclusions img {
         width: 50px;
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity .5s;
         -webkit-transition: opacity .5s;
     }
@@ -76,7 +76,7 @@
         opacity: 1;
     }
     #inclusions p {
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity .5s;
         -webkit-transition: opacity .5s;
     }
@@ -88,49 +88,18 @@
     <h2>Here's where the cool shit happens</h2>
       <div class="row">
         <div *ng-for="#item of rights.simple" class="col m6">
-          <div class="card-panel">
-            <h4>{{item.heading}}</h4>
-            <img src="graphics/cisfemale.png" [class.include]="included[0]" />
-            <img src="graphics/cismale.png" [class.include]="included[1]" />
-            <img src="graphics/hetero.png" [class.include]="included[2]" />
-            <img src="graphics/noncis.png" [class.include]="included[3]" />
-            <img src="graphics/nonhetero.png" [class.include]="included[1]" />
+          <div class="card">
+              <div class=""><h4>{{item.heading}}</h4></div>
+              <div class="">
+            <img src="graphics/cisfemale.png" [class.include]="included[0]" class="tooltipped" data-position="top" data-tooltip="CIS Female" />
+            <img src="graphics/cismale.png" [class.include]="included[1]" class="tooltipped" data-position="top" data-tooltip="CIS Male" />
+            <img src="graphics/hetero.png" [class.include]="included[2]" class="tooltipped" data-position="top" data-tooltip="Hetero" />
+            <img src="graphics/noncis.png" [class.include]="included[3]" class="tooltipped" data-position="top" data-tooltip="Non-CIS" />
+            <img src="graphics/nonhetero.png" [class.include]="included[1]" class="tooltipped" data-position="top" data-tooltip="Non-hetero" />
+        </div>
           </div>
         </div>
       </div>
   </div>
 </div>
 
-
-<!-- <div class="container">
-    <h1>Hello {{ name }}</h1>
-    <p>Friends:</p>
-    <ul>
-         <li *ng-for="#name of names">
-             {{ name }}
-         </li>
-    </ul>
-    {{version}}
-    <input #myname (keyup)>
-    <p>{{myname.value}}</p>
-
-    <p>
-      <input name="version" type="radio" id="version0" (change)="ver('simple')" />
-      <label for="version0">Simple</label>
-      <input name="version" type="radio" id="version1" (change)="ver('original')" />
-      <label for="version1">Original</label>
-      <input name="version" type="radio" id="version2" (change)="ver('alternative')" />
-      <label for="version2">Alternative</label>
-    </p>
-
-    <p>
-      <input #test2 (change) type="checkbox" id="test5" />
-      <label for="test5">Accept these terms?</label>
-    </p>
-
-    <p *ng-if="test2.checked">You are included.</p>
-    <p *ng-if="included[0]">Yes1</p>
-    <p *ng-if="included[1]">Yes2</p>
-    <p *ng-if="included[2]">Yes3</p>
-    <p *ng-if="included[3]">Yes4</p>
-</div> -->
