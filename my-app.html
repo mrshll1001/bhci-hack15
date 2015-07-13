@@ -1,7 +1,7 @@
 <!-- Single row -->
 <div class="row">
   <div class="col m4">
-    <div class="card">
+    <div class="card-panel">
       <div class="card-content black-text">
         <span class="card-title black-text">Are They YOUR Rights?</span>
 
@@ -67,7 +67,7 @@
   </div>
   <style>
     #inclusions img {
-        width: 50px;
+        width: 70px;
         opacity: 0;
         transition: opacity .5s;
         -webkit-transition: opacity .5s;
@@ -86,15 +86,14 @@
   </style>
   <div class="col m8" id="inclusions">
     <h2>Here's where the cool shit happens</h2>
-    <p [class.include]="included[0]">Yes1</p>
-    <p [class.include]="included[1]">Yes2</p>
-    <p [class.include]="included[2]">Yes3</p>
-    <p [class.include]="included[3]">Yes4</p>
-    <img src="graphics/cisfemale.png" [class.include]="included[0]" />
-    <img src="graphics/cismale.png" [class.include]="included[1]" />
-    <img src="graphics/hetero.png" [class.include]="included[2]" />
-    <img src="graphics/noncis.png" [class.include]="included[3]" />
-    <img src="graphics/nonhetero.png" [class.include]="included[1]" />
+      <div *ng-for="#item of rights.simple" class="card-panel">
+        <h4>{{item.heading}}</h4>
+        <img src="graphics/cisfemale.png" [class.include]="included[0]" />
+        <img src="graphics/cismale.png" [class.include]="included[1]" />
+        <img src="graphics/hetero.png" [class.include]="included[2]" />
+        <img src="graphics/noncis.png" [class.include]="included[3]" />
+        <img src="graphics/nonhetero.png" [class.include]="included[1]" />
+      </div>
   </div>
 </div>
 
