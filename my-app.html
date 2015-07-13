@@ -66,6 +66,15 @@
 
   </div>
   <style>
+    #inclusions img {
+        width: 50px;
+        opacity: 0;
+        transition: opacity .5s;
+        -webkit-transition: opacity .5s;
+    }
+    #inclusions img.include {
+        opacity: 1;
+    }
     #inclusions p {
         opacity: 0;
         transition: opacity .5s;
@@ -81,6 +90,11 @@
     <p [class.include]="included[1]">Yes2</p>
     <p [class.include]="included[2]">Yes3</p>
     <p [class.include]="included[3]">Yes4</p>
+    <img src="graphics/cisfemale.png" [class.include]="included[0]" />
+    <img src="graphics/cismale.png" [class.include]="included[1]" />
+    <img src="graphics/hetero.png" [class.include]="included[2]" />
+    <img src="graphics/noncis.png" [class.include]="included[3]" />
+    <img src="graphics/nonhetero.png" [class.include]="included[1]" />
   </div>
 </div>
 
