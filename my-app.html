@@ -1,4 +1,52 @@
-<div class="container">
+<!-- Single row -->
+<div class="row">
+  <div class="col m4">
+    <div class="card">
+      <div class="card-content black-text">
+        <span class="card-title black-text">Are They YOUR Rights?</span>
+
+        <form action='#'>
+          <input name="rights-version" type="radio" id="simple-rights"  (change)="ver('simple')" />
+          <label for="simple-rights">Simple</label>
+
+          <input name="rights-version" type="radio" id="full-rights" (change)="ver('full')"/>
+          <label for="full-rights">Full</label>
+
+          <input name="rights-version" type="radio" id="our-rights" (change)="ver('our')" />
+          <label for="our-rights">Our Version</label>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content black-text">
+        <span class="card-title black-text">The Universal Declaration of Human Rights</span>
+        <div class="section">
+            <h5>The Right to Marry</h5>
+            <p>Everyone has the right the marry, form a family, and exit from a marriage (or whatever Angelika decides)</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>The Right to Freedom.</h5>
+            <p>Everyone has the right freedom. Or something.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col m8">
+    <h2>Here's where the cool shit happens</h2>
+    <p *ng-if="included[0]">Yes1</p>
+    <p *ng-if="included[1]">Yes2</p>
+    <p *ng-if="included[2]">Yes3</p>
+    <p *ng-if="included[3]">Yes4</p>
+  </div>
+</div>
+
+
+<!-- <div class="container">
     <h1>Hello {{ name }}</h1>
     <p>Friends:</p>
     <ul>
@@ -6,7 +54,7 @@
              {{ name }}
          </li>
     </ul>
-
+    {{version}}
     <input #myname (keyup)>
     <p>{{myname.value}}</p>
 
@@ -29,5 +77,4 @@
     <p *ng-if="included[1]">Yes2</p>
     <p *ng-if="included[2]">Yes3</p>
     <p *ng-if="included[3]">Yes4</p>
-</div>
-
+</div> -->

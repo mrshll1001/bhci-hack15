@@ -16,25 +16,32 @@ import {Component, View, bootstrap, NgFor, NgIf} from 'angular2/angular2';
 class MyAppComponent {
     name: string;
     names: Array<string>;
-    todos: Array<string>;
     version: string;
     included: Array<boolean>;
-  
-    constructor() {
+
+    constructor()
+    {
         this.name = 'Alice';
         this.names = ["Aarav", "MartÃ­n", "Shannon", "Ariana", "Kai"];
         this.version = 'simple';
-        this.included = [true, true, false, true];
+        this.inc();
     }
 
-    ver(v) {
+    ver(v)
+    {
         this.version = v;
+        this.inc();
     }
 
-    inc() {
-        
+    inc()
+    {
+
+      var incs = {'simple':[false,false,true,true],'full':[false,false,true,false],'our':[true,true,true,true]}
+      this.included = incs[this.version];
     }
 }
+
+//
 
 
 
