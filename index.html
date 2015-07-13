@@ -7,11 +7,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
+      <!-- Single row -->
+      <div class="row">
+        <div class="col m4">
+          <div class="card">
+            <div class="card-content black-text">
+              <span class="card-title black-text">Are They YOUR Rights?</span>
+
+              <form action='#'>
+                <input name="rights-version" type="radio" id="simple-rights" />
+                <label for="simple-rights">Simple</label>
+
+                <input name="rights-version" type="radio" id="full-rights" />
+                <label for="full-rights">Full</label>
+
+                <input name="rights-version" type="radio" id="our-rights" />
+                <label for="our-rights">Our Version</label>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content black-text">
+              <span class="card-title black-text">The Universal Declaration of Human Rights</span>
+              <div class="section">
+                  <h5>The Right to Marry</h5>
+                  <p>Everyone has the right the marry, form a family, and exit from a marriage (or whatever Angelika decides)</p>
+              </div>
+              <div class="divider"></div>
+              <div class="section">
+                  <h5>The Right to Freedom.</h5>
+                  <p>Everyone has the right freedom. Or something.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col m8">
+          <h2>Here's where the cool shit happens</h2>
+        </div>
+      </div>
+
+
+
         <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
         <script src="https://jspm.io/system@0.16.js"></script>
         <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
-        
-        <my-app></my-app>
+
+        <!-- <my-app></my-app> -->
 
         <script>System.import('app');</script>
 
