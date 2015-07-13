@@ -6,7 +6,7 @@
         <span class="card-title black-text">Are They YOUR Rights?</span>
 
         <form action='#'>
-          <input name="rights-version" type="radio" id="simple-rights"  (change)="ver('simple')" />
+          <input name="rights-version" type="radio" id="simple-rights" (change)="ver('simple')" />
           <label for="simple-rights">Simple</label>
 
           <input name="rights-version" type="radio" id="full-rights" (change)="ver('full')"/>
@@ -65,12 +65,22 @@
     </div>
 
   </div>
-  <div class="col m8">
+  <style>
+    #inclusions p {
+        opacity: 0;
+        transition: opacity .5s;
+        -webkit-transition: opacity .5s;
+    }
+    #inclusions p.include {
+        opacity: 1;
+    }
+  </style>
+  <div class="col m8" id="inclusions">
     <h2>Here's where the cool shit happens</h2>
-    <p *ng-if="included[0]">Yes1</p>
-    <p *ng-if="included[1]">Yes2</p>
-    <p *ng-if="included[2]">Yes3</p>
-    <p *ng-if="included[3]">Yes4</p>
+    <p [class.include]="included[0]">Yes1</p>
+    <p [class.include]="included[1]">Yes2</p>
+    <p [class.include]="included[2]">Yes3</p>
+    <p [class.include]="included[3]">Yes4</p>
   </div>
 </div>
 

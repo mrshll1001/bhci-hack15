@@ -1,6 +1,6 @@
 /// <reference path="typings/angular2/angular2.d.ts" />
 
-import {Component, View, bootstrap, NgFor, NgIf} from 'angular2/angular2';
+import {Component, View, bootstrap, NgFor, NgIf, CSSClass} from 'angular2/angular2';
 
 // Annotation section
 @Component({
@@ -9,7 +9,7 @@ import {Component, View, bootstrap, NgFor, NgIf} from 'angular2/angular2';
 
 @View({
     templateUrl: 'my-app.html',
-    directives: [NgFor, NgIf]
+    directives: [NgFor, NgIf, CSSClass]
 })
 
 // Component controller
@@ -42,7 +42,7 @@ class MyAppComponent {
     inc()
     {
 
-      var incs = {'simple':[false,false,true,true],'full':[false,false,true,false],'our':[true,true,true,true]}
+      var incs = {'simple':[!1,!1,!0,!0],'full':[!1,!1,!0,!1],'our':[!0,!0,!0,!0]}
       this.included = incs[this.version];
     }
 }
