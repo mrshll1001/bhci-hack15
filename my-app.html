@@ -1,21 +1,22 @@
-<h1>Hello {{ name }}</h1>
-<p>Friends:</p>
-<ul>
-     <li *ng-for="#name of names">
-         {{ name }}
-     </li>
-</ul>
+<div class="container">
+    <h1>Hello {{ name }}</h1>
+    <p>Friends:</p>
+    <ul>
+         <li *ng-for="#name of names">
+             {{ name }}
+         </li>
+    </ul>
 
-<input #myname (keyup)>
-<p>{{myname.value}}</p>
+    <input #myname (keyup)>
+    <p>{{myname.value}}</p>
 
     <p>
-      <input name="group1" type="radio" id="test2" />
-      <label for="test2">Yellow</label>
-    </p>
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test3"  />
-      <label for="test3">Green</label>
+      <input name="version" type="radio" id="version0" (change)="ver('simple')" />
+      <label for="version0">Simple</label>
+      <input name="version" type="radio" id="version1" (change)="ver('original')" />
+      <label for="version1">Original</label>
+      <input name="version" type="radio" id="version2" (change)="ver('alternative')" />
+      <label for="version2">Alternative</label>
     </p>
 
     <p>
@@ -24,4 +25,9 @@
     </p>
 
     <p *ng-if="test2.checked">You are included.</p>
+    <p *ng-if="included[0]">Yes1</p>
+    <p *ng-if="included[1]">Yes2</p>
+    <p *ng-if="included[2]">Yes3</p>
+    <p *ng-if="included[3]">Yes4</p>
+</div>
 
