@@ -1,9 +1,15 @@
 <!-- Single row -->
 <div class="row">
-  <div class="col m4">
+  <div class="col m12">
     <div class="card-panel blue-grey lighten-2">
       <div class="card-content black-text">
-        <span class="card-title black-text">Are They YOUR Rights?</span>
+        <h5><span class="card-title black-text">Who's Rights Are They Anyway?</span></h5>
+
+        <p>
+          When we looked over the United Nations Universal Declaration of Human Rights we noticed that, the wording was very androcentric (focuses on men), and very heteronormative (focuses on 'straight' people), and fails to represent at all any other points of the gender and sexuality spectrums.
+          Whilst we think that this language was a product of the time it was written (1948), we also think that this language fails to represent the entire spectrum of humanity. So we wrote in a few changes.
+          Choose a version of the Human Rights below to see the various articles and who, by way of representation in the language, has what rights.
+        </p>
 
         <form action='#'>
           <input name="rights-version" type="radio" id="simple-rights" (change)="ver('simple')" />
@@ -18,7 +24,10 @@
         </form>
       </div>
     </div>
-
+  </div>
+</div>
+<div class="row">
+  <div class="col m4">
     <div class="card lime lighten-2">
       <div class="card-content black-text">
         <span class="card-title black-text">The Universal Declaration of Human Rights</span>
@@ -63,8 +72,8 @@
         </li> -->
       </div>
     </div>
-
   </div>
+
   <style>
     #inclusions img {
         width: 50px;
@@ -81,9 +90,6 @@
     }
   </style>
   <div class="col m8" id="inclusions">
-    <h2>Here's who has these rights</h2>
-      <div class="row">
-
           <div *ng-for="#item of includes" class="col m6">
             <div class="card-panel orange">
                 <div class=""><h4>{{item.title}} <img class="itu right" src="graphics/{{item.url}}" /></h4></div>
@@ -98,6 +104,5 @@
           </div>
 
 
-      </div>
   </div>
 </div>
