@@ -49,7 +49,7 @@ class MyAppComponent {
     inc()
     {
 
-      var incs = {'simple':[!1,!1,!0,!0],'full':[!1,!1,!0,!1],'our':[!0,!0,!0,!0]}
+      var incs = {'simple':[!1,!1,!0,!0,!0],'full':[!1,!0,!0,!1,!1],'our':[!0,!0,!0,!0,!0]}
       this.included = incs[this.version];
     }
 }
