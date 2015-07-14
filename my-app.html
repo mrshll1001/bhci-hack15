@@ -1,25 +1,25 @@
 <!-- Single row -->
 <div class="row">
   <div class="col m4">
-    <div class="card-panel">
+    <div class="card-panel blue-grey lighten-2">
       <div class="card-content black-text">
         <span class="card-title black-text">Are They YOUR Rights?</span>
 
         <form action='#'>
           <input name="rights-version" type="radio" id="simple-rights" (change)="ver('simple')" />
-          <label for="simple-rights">Simple</label>
+          <label for="simple-rights"><span class="black-text">Simple</span></label>
 
           <input name="rights-version" type="radio" id="full-rights" (change)="ver('full')"/>
-          <label for="full-rights">Full</label>
+          <label for="full-rights"><span class="black-text">Full</span></label>
 
           <input name="rights-version" type="radio" id="our-rights" (change)="ver('our')" />
-          <label for="our-rights">Our Version</label>
+          <label for="our-rights"><span class="black-text">Our Version</span></label>
 
         </form>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card lime lighten-2">
       <div class="card-content black-text">
         <span class="card-title black-text">The Universal Declaration of Human Rights</span>
 
@@ -83,18 +83,21 @@
   <div class="col m8" id="inclusions">
     <h2>Here's who has these rights</h2>
       <div class="row">
-        <div *ng-for="#item of includes" class="col m6">
-          <div class="card-panel">
-              <div class=""><h4>{{item.title}} <img class="itu right" src="graphics/{{item.url}}" /></h4></div>
-              <div class="">
-            <img src="graphics/cisfemale.png" [class.include]="included[0]" class="tooltipped" data-position="top" data-tooltip="CIS Female" />
-            <img src="graphics/cismale.png" [class.include]="included[1]" class="tooltipped" data-position="top" data-tooltip="CIS Male" />
-            <img src="graphics/hetero.png" [class.include]="included[2]" class="tooltipped" data-position="top" data-tooltip="Hetero" />
-            <img src="graphics/noncis.png" [class.include]="included[3]" class="tooltipped" data-position="top" data-tooltip="Non-CIS" />
-            <img src="graphics/nonhetero.png" [class.include]="included[4]" class="tooltipped" data-position="top" data-tooltip="Non-hetero" />
-        </div>
+
+          <div *ng-for="#item of includes" class="col m6">
+            <div class="card-panel orange">
+                <div class=""><h4>{{item.title}} <img class="itu right" src="graphics/{{item.url}}" /></h4></div>
+                <div class="">
+              <img src="graphics/cisfemale.png" [class.include]="item.includes[version][0]" class="tooltipped" data-position="top" data-tooltip="CIS Female" />
+              <img src="graphics/cismale.png" [class.include]="item.includes[version][1]" class="tooltipped" data-position="top" data-tooltip="CIS Male" />
+              <img src="graphics/hetero.png" [class.include]="item.includes[version][2]" class="tooltipped" data-position="top" data-tooltip="Hetero" />
+              <img src="graphics/noncis.png" [class.include]="item.includes[version][3]" class="tooltipped" data-position="top" data-tooltip="Non-CIS" />
+              <img src="graphics/nonhetero.png" [class.include]="item.includes[version][4]" class="tooltipped" data-position="top" data-tooltip="Non-hetero" />
+                </div>
+            </div>
           </div>
-        </div>
+
+
       </div>
   </div>
 </div>

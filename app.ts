@@ -43,7 +43,7 @@ class MyAppComponent {
     ver(v)
     {
         this.version = v;
-        this.inc();
+        /*this.inc();*/
     }
 
     inc()
